@@ -2,7 +2,7 @@ const axios = require('axios');
 const URL = require('url').URL;
 const fs = require('fs');
 
-async function writeOutputToFile(outputText = null, fileToWrite = null) {
+function writeOutputToFile(outputText = null, fileToWrite = null) {
     if (outputText == null)
         throw "No input text to write";
     if (fileToWrite == null)
